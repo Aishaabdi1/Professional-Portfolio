@@ -1,178 +1,242 @@
-*{
-    margin: 0;
-    padding: 0;
+:root {
+    --main-color:white;
+    --sec-color: navy;
+  }
+  
+  *{
     box-sizing: border-box;
+    margin: 0;
+  }
+   /* header section styles */
+  
+  .header { 
+  width: 100%;
+  height: 61px;
+  background-color:#5e5c59;
+  }
+  
+  .nav-container {
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-end;
+   align-items: center;
+  }
+  
+  .nav-links-container {
+   display: flex;
+  
+  }
+  
+  .nav-link {
+   margin: 1.6rem;
+  }
+  
+  .nav-link a {
+   text-decoration: none;
+   font-size: 20px;
+   color: var(--main-color);
+   font-family: songster, sans-serif;
+  }
+  
+  
+  .nav-link a:hover {
+   color: blue;
+  }
+  
+  .banner{
+    background-color:#242625; 
+   display: flex;
+  }
+  
+  .avatar{
+    margin-left: 20px;
+   }
+   
+   .container{
+  
+    display: flex;
+    margin-top: 30PX;
+  }
+  
+   .child2{
+    width: 80%;
+  }
+  
+  .child1{
+    width: 20%;
+    border-right: 3px solid var(--sec-color);
+  }
+  .child1 h2{
+   color: black;
+   text-align: center;
+   font-family: songster, sans-serif; 
+  }
+  
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: songster, sans-serif;
+  }
+  
+  .cards{
+  
+    position: relative;
+  
+  }
+  
+  
+  .pic{
+  
+   border-radius: 60%;
+  
+  }
+  
+  h1{
+     font-family: songster, sans-serif;
+     color: var(--main-color);
+     text-align: center;
+     font-size: 100px;
+     font-weight: 100;
+  }
+  
+  
+  .gall{
+    width: 80%;
+    background-image: url("../assets/images/blue.jpg");
+    object-fit: cover;
+    height:400px;
+    margin-right: 20px;
+    border: 10px solid var(--sec-color);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+  }
+  
+  .text{
+    position: absolute;
+    color: black;
+    top: 0;
+    background-color: bisque;
+    font-family: songster, sans-serif;
+  }
+   /* apps gallery section */
+  
+  .apps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     
-}
-
-
-.header{
-    background-color: aqua;
-    width: 100%;
-    height: 80px;
-
-}
-
-.nav-container{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.nav-links-container{
-    display: flex;
-    flex-direction: row;
-}
-.nav-link{
-    margin:30px 30px 0px 0px;
-}
-.nav-link a{
-    font-size: 20px;
-}
-.nav-link h1{
-    font-size: 40px;
-}
-.hero, .projects
-{
-    /* background-color: white; */
-    display: flex;
-}
-.projects2{
-  display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  gap: 20px;
-  width: 100%;
-}
-.mypic{
-    width:250px;
-}
-.about-me p{
-    text-align: center;
-    font-family: 'Square Peg';
-    font-size: 54px;
-}
-.about-me h1{
-    text-align: center;
-} 
-.tech{
-  width: 100%;
- 
-  border: 4px solid black;
-}
-.tech2{
+    margin-left: 250px;
+    margin-top: 30px;
+  }
+  .pic2{
     object-fit: cover;
     width: 300px;
-    
-}
-.sidem{
-    width: 30%;
-}
-.img{
-    width: 70%;
+    border: 10px solid var(--sec-color);
     position: relative;
-
-
-}
-.project-h1{
-    position: absolute;
-    background-color: rgb(151, 213, 213);
-    top: 440px;
-}
-.sub-project-h1{
-    position: absolute;
-    background-color: rgb(151, 213, 213);
-    top: 300px;
-}
-.proj1{
-    width: 30%;
-    border: 2px solid black;
-    background-color: rgb(107, 206, 231);
-}
-
-.proj1 h1{
-
-    /* text-align: center; */
-    font-size: 50px;
-    /* margin-top: 100px; */
-    
-}
-
-/* .proj2{
-    width: 30%;
-    /* display: flex; */
-    
-
-.pic-container{
-    display: flex;
-    justify-self: center;
-    flex-wrap: wrap;
-    width: 70%;
-}
-.sml-proj{
-    width: 30%;
-
-}
-
-.proj1 h1{
-    text-align: center;
-    
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: aqua;
-    height: 130px;
-}
-
-ul{
-    text-align: center;
   }
-
-  li{
-      text-align: center;
-    display: inline-block;
-    margin: 20px 150px 0px 0px;
+  .pic3{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+  }
+  
+  .text2{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    background-color: beige;
+    font-family: songster, sans-serif;
+  }
+  
+  h2{
+    text-align: center;
     font-size: 30px;
+    color: var(--main-color);
+    font-family: songster, sans-serif;
   }
-
-.contact-h1{
-
-        text-align: center;
-        font-size: 40px;
-        margin-top: 20px;
-        border-right: 2px solid black;
-
-}
-   
-@media screen and (max-width: 596px) {
-    .hero, .projects, .nav-container, .nav-links-container,
-    .projects2
-
-    {
+   /* footer section */
+  
+  .footer{
+    background-color: #242625;
+    height: 120px;
+  }
+  
+  
+  
+  ul{
+    /* text-align: center; */
+  }
+  
+  li{
+   display: inline-block;
+   margin: 20px;
+   font-size: 20px;
+  
+  }
+  .footer-container{
+   display: flex;
+   justify-content: center;
+  }
+  .basic{
+   display: flex;
+   justify-content: center;
+  }
+  
+  .basic a{
+   color:var(--main-color);
+   font-family: songster, sans-serif;
+   text-decoration: none;
+  }
+  
+  .project2{  
+  
+    width: 80%;
+    margin: auto;
+    border: 10px solid var(--sec-color);
+  
+  }
+  
+  /* fonts */
+  
+  @font-face {
+    font-family: 'songster';
+    src: url(/assets/fonts/Aur.otf);
+  }
+  
+  
+  /* mobile size */
+  
+  @media screen and (max-width: 596px) {
+    .nav-container,
+    .nav-links-container,
+    .banner, .container, .footer-container, .basic{
       flex-direction: column;
       align-items: center;
   
     }
-
-    .header, .footer{
-        position: static;
-        height: 100%;
+  
+    .apps{
+       flex-direction: column;
+       align-items: center;
+       margin-left: 0;
     }
-    .project-h1{
-        position: absolute;
-        background-color: rgb(151, 213, 213);
-        top:0;
+  
+    .basic{
+       flex-direction: column;
+       align-items: center;
+  
     }
-    .sub-project-h1{
-        position: absolute;
-        background-color:rgb(151, 213, 213);
-        top: 0px;
+  
+    .header, .footer {
+       position: static; 
+      height: 100%; 
     }
-    .proj1{
-        width: 100%;
-        border: 2px solid black;
-        background-color: rgb(107, 206, 231);
+  
+    .child1{
+       border: none;
     }
-}
+  
+  }
